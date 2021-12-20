@@ -1,0 +1,510 @@
+*{
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body{
+    background-color: rgb(238, 182, 182);
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; 
+  
+}
+
+img{
+    width: 100%;
+    height: 90%;
+}
+
+.clearfix::after,
+section::after,
+footer::after
+{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+
+
+
+/*-------- header --------*/
+
+ .header{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    padding: 0.8rem;
+ }
+    
+nav ul{
+    position: sticky;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline;
+    padding: 0.7rem;    
+}
+
+nav a{
+    position: sticky;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: rgb(126, 241, 126);
+}
+
+@media screen and (min-width:700px) {
+    nav{
+        float: right;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* -------- portfolio -------- */
+
+.container{
+    width: 100%;
+    margin: 0 auto;   
+}
+
+h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;   
+}
+
+.title{
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.title span{
+    font-weight: 300;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.title-cta{
+ 
+    margin: 0 0 .5em;
+}
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+@media screen and (min-width:750px){
+    .title{
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+
+    .title span{
+        font-size: 2.7rem;
+    }
+
+}
+
+
+
+
+
+/*-------Button-accent --------*/
+
+.button{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .3em 1em;   
+}
+
+@media screen and (min-width:800px) {
+    .container .button{
+        font-size: 1.6rem;
+    }    
+}
+
+.button-small{
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.button-accent{
+    color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background:#00ff6c ;
+    color: #232323;
+}
+
+.button-dark{
+    color: #232323;
+    border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus{
+    background: #232323;
+    color: #00ff6c;
+}
+
+
+
+
+
+/* --------- Background image --------- */
+
+.home-hero{
+    background-image: url(./Images/images\ \(2\).jfif);
+    background-repeat: no-repeat;
+    padding: 5em 0em;
+   background-size: cover;
+   background-position: center center;
+    color: white;  
+}
+
+@media screen and (min-width:750px){
+    .home-hero{
+        height:100vh ;
+        padding-top: 35vh;
+    }    
+}
+
+
+
+
+
+
+/*------ home-about-textbox ------ */
+
+p{
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+.home-about-textbox{
+    background-color: #232323;
+    padding: 4rem;
+    width: 100vw;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.home-about-textbox h1{
+    color: #00ff6c;
+    margin-top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -1rem;
+    background: #232323;
+    padding: 0 1rem;   
+}
+
+@media screen and (min-width:250px) {
+    .home-about-textbox h1{
+        margin-top: 2rem; 
+        padding: 0.5rem  1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        top: -1.2rem;
+    }  
+}
+
+@media screen and (max-width:305px) {
+.home-about-textbox h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    top: -1rem;
+}
+    
+}
+
+ @media screen and (min-width:800px) {
+
+    .home-about-textbox h1{
+        left: 8rem;
+        padding:1rem 0.1;
+    }
+
+    .home-about-textbox p{
+    text-align: left;
+    font-size: 11px; 
+
+   }
+
+   .home-about-textbox{   
+    width: 45%; 
+    height: 350px;
+    margin-left: -2.5%; 
+    top: -8em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.849); 
+  }  
+
+    .home-about{
+        background-image: url(./Images/cuba.jpg);
+        background-repeat: no-repeat;
+       background-position: center center;
+       height:390px ;
+      padding: 4em;
+       
+    }
+
+  
+} 
+
+@media screen and (min-width:1000px) {
+    .home-about-textbox{
+        height: 22rem;
+        width: 33vw;
+    }
+
+    .home-about-textbox p{
+        text-align: left;
+        line-height: 1.7;
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+/* -------Portfolio Images------- */
+
+.portfolio h1{
+    font-weight: 500;
+    font-size: 2.7rem;
+    margin-top: 0;
+}
+
+@media screen and (max-width:355px) {
+    .portfolio h1{
+    font-size: 2.4rem;
+}
+}
+
+
+@media screen and (min-width:768px) {
+.image1{
+    height: 256px;
+}
+.image3{
+    height: 255px;
+}
+.image5{
+    height: 250px;
+}
+}
+
+
+@media screen and (min-width:1024px) {
+    .image1{
+        height: 226px;
+    }
+    .image2{
+        height: 226px;
+    }
+    .image3{
+        height: 226px;
+    }
+    .image5{
+        height: 226px;
+    }
+    .image6{
+        height: 226px;
+    }
+    .image4{
+        height: 226px;
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    .image1{
+        height: 300px;
+    }
+    .image2{
+        height: 300px;
+    }
+    .image3{
+        height: 300px;       
+    }
+    .image4{
+        height: 300px;       
+    }
+    .image5{
+        height: 300px;    
+    }
+    .image6{
+        height: 300px;       
+    }
+}
+
+
+.portfolio{
+    margin: 3em 0;
+    
+    }
+
+
+.port-item{
+    margin: 0;
+    position: relative;
+}
+
+.port-item img{
+    display: block;
+}
+ 
+.port-desc{
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+     left: 0;
+     right: 0;
+     color: white;
+     background: rgba(0,0,0,.6 );
+     padding-bottom: 2em;
+    
+}
+
+.port-desc p{
+    margin: 1em;
+}
+
+ @media screen and (min-width:37rem) {
+     .port-item{
+         width: 50%;
+         float: left;
+        
+     }
+     
+ }
+
+ @media screen and (min-width:60rem) {
+    .port-item{
+        width: 33.3333334%;
+        overflow: hidden;
+    }
+    
+    .port-desc{
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+.cta{
+    background-color: #00ff6c;
+    /* padding: 3em 0; */
+    padding: 3em 0%;
+}
+
+
+/* footer */
+
+footer{
+    background: #232323;
+    color: #fff;
+    text-align: left;
+    padding: 5em o;
+}
+
+
+
+ [class^=col-]
+{
+    width: 100%;
+}
+
+
+
+
+@media screen and (min-width:40rem) 
+{
+    [class^=col-]
+{
+    float: left;
+    padding: 0 .5em;
+}
+
+    [class^=col-]:first-child{
+        padding-left: 0;
+        }
+        
+        [class^=col-]:last-child{
+            padding-right: 0;
+        } 
+
+.col-3{
+    width: 50%;
+}
+
+.col-1{
+    width: 16.6666%;
+}
+}
+
+@media screen and (min-width:425px) 
+{
+    [class^=col-]
+{
+    float: left;
+    padding: 0 .2em;
+}
+
+    [class^=col-]:first-child{
+        padding-left: 0;
+        }
+        
+        [class^=col-]:last-child{
+            padding-right: 0;
+        } 
+
+.col-3{
+    width: 50%;
+    font-size: smaller;
+}
+
+.col-1{
+    width: 12%;
+}
+}
