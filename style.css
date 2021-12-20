@@ -180,7 +180,7 @@ h1{
 /* --------- Background image --------- */
 
 .home-hero{
-    background-image: url(/images\ \(2\).jfif);
+    background-image: url(img/images\ \(2\).jfif);
     background-repeat: no-repeat;
     padding: 5em 0em;
    background-size: cover;
@@ -276,7 +276,7 @@ p:last-of-type{
   }  
 
     .home-about{
-        background-image: url(/cuba.jpg);
+        background-image: url(img/cuba.jpg);
         background-repeat: no-repeat;
        background-position: center center;
        height:390px ;
